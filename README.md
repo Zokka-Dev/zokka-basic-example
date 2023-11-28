@@ -30,3 +30,13 @@ zelm make src/Main.elm
 
 Now open `index.html` again in your web browser. You should see `The length of
 hangsInVanillaElm is 1` appear.
+
+Now go ahead and open `elm.json`. You'll see that we've added a new field called
+`zelm-package-overrides`, which tells us we are overriding `elm/core` version
+`1.0.5` with `zelm/elm-core-1-0-override` version `1.0.0`.
+`zelm/elm-core-1-0-override` contains the bug fix that we are using. This means
+everywhere in our dependency tree we replace `elm/core:1.0.5` with
+`zelm/elm-core-1-0-override:1.0.0`, even in transitive dependencies.
+
+This allows us to take full advantage of all the bug fixes provided in our
+override package.

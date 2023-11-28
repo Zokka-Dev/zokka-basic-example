@@ -25,7 +25,7 @@
         {
             "original-package-name": "elm/core",
             "original-package-version": "1.0.5",
-            "override-package-name": "zelm/elm-core-1-0",
+            "override-package-name": "zelm/elm-core-1-0-override",
             "override-package-version": "1.0.0"
 	}
     ]
